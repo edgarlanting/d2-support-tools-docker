@@ -15,7 +15,8 @@ TODO:
 * mcli
 
 ### Run it
-```docker run -it --rm jwhitemeso/dcos-support-tools:latest bash
+```
+docker run -it --rm jwhitemeso/dcos-support-tools:latest bash
 ```
 
 or
@@ -27,6 +28,8 @@ cd dcos-support-tools
 docker build -t jwhitemeso/dcos-support-tools:latest .
 ```
 ### Current versions
+|Tool|Version|
+|---|---|
 |DC/OS CLI|0.8.0|
 |bun|1.8.1|
 |dcosjq|master|

@@ -11,8 +11,15 @@ This Docker image was created to be used to work with and troubleshoot DC/OS clu
 * unzip/p7zip
 
 TODO:
-* yabt
-* mcli
+* [Jeff White's](https://github.com/jeffwhite530) yabt
+* [Time Harper's](https://github.com/timcharper) [mcli](https://github.com/timcharper/mcli)
+
+### Current versions
+|Tool|Version|
+|---|---|
+|DC/OS CLI|0.8.0|
+|bun|1.8.1|
+|dcosjq|master|
 
 ### Run it
 ```
@@ -23,14 +30,8 @@ or
 
 ### Build it
 ```
-git clone
-cd dcos-support-tools
+git clone git@github.com:jeffwhite530/dcos-support-tools-docker.git
+cd dcos-support-tools-docker
 docker build -t jwhitemeso/dcos-support-tools:latest .
 ```
-### Current versions
-|Tool|Version|
-|---|---|
-|DC/OS CLI|0.8.0|
-|bun|1.8.1|
-|dcosjq|master|
 

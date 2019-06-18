@@ -35,3 +35,10 @@ cd dcos-support-tools-docker
 docker build -t jwhitemeso/dcos-support-tools:latest .
 ```
 
+### Connecting to Kubernetes with `kubectl proxy`
+```
+docker run -it --rm -p 8001:8001 jwhitemeso/dcos-support-tools:latest bash
+# Connect to your cluster then ...
+kubectl proxy --address=0.0.0.0
+```
+

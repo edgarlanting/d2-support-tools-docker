@@ -19,7 +19,7 @@ TODO:
 |---|---|
 |DC/OS CLI|0.8.0|
 |bun|1.8.1|
-|dcosjq|master|
+|dcosjq|master@4fe0f63|
 
 ### Run it
 ```

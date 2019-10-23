@@ -1,8 +1,12 @@
-This Docker image was created to be used to work with and troubleshoot DC/OS clusters.  It is based off of ubuntu:latest and creates a container which includes:
+*d2-support-tools is neither supported nor endorsed by [D2iQ](https://d2iq.com).*
+
+This Docker image includes several diagnostic and support tools for D2iQ products such as DC/OS and Konvoy:
 
 * [DC/OS CLI](https://github.com/dcos/dcos-cli/releases)
-* [Andrey Dyatlov's](https://github.com/adyatlov) [bun](https://github.com/adyatlov/bun/releases)
+* [Andrey Dyatlov's](https://github.com/adyatlov) [bun](https://github.com/mesosphere/bun)
+* [Jeff White's](https://github.com/jeffwhite530) [d2yabt](https://github.com/jeffwhite530/d2yabt)
 * [Dustin Nemes'](https://github.com/some-things) [dcosqj](https://github.com/some-things/dcosjq)
+* [Dustin Nemes'](https://github.com/some-things) [kbk](https://github.com/some-things/kbk)
 * kubectl
 * curl
 * vim
@@ -11,33 +15,33 @@ This Docker image was created to be used to work with and troubleshoot DC/OS clu
 * unzip/p7zip
 
 TODO:
-* [Jeff White's](https://github.com/jeffwhite530) yabt
 * [Time Harper's](https://github.com/timcharper) [mcli](https://github.com/timcharper/mcli)
 
 ### Current versions
 |Tool|Version|
 |---|---|
-|DC/OS CLI|0.8.0|
-|bun|1.8.1|
-|dcosjq|master@4fe0f63|
+|DC/OS CLI|1.1.0|
+|bun|2.2.0|
+|d2yabt|1.0.5|
+|dcosjq|master@c5a8277|
 
 ### Run it
 ```
-docker run -it --rm jwhitemeso/dcos-support-tools:latest bash
+docker run -it --rm jwhitemeso/d2-support-tools:latest bash
 ```
 
 or
 
 ### Build it
 ```
-git clone git@github.com:jeffwhite530/dcos-support-tools-docker.git
-cd dcos-support-tools-docker
-docker build -t jwhitemeso/dcos-support-tools:latest .
+git clone git@github.com:jeffwhite530/d2-support-tools-docker.git
+cd d2-support-tools-docker
+docker build -t jwhitemeso/d2-support-tools:latest .
 ```
 
 ### Connecting to Kubernetes with `kubectl proxy`
 ```
-docker run -it --rm -p 8001:8001 jwhitemeso/dcos-support-tools:latest bash
+docker run -it --rm -p 8001:8001 jwhitemeso/d2-support-tools:latest bash
 # Connect to your cluster then ...
 kubectl proxy --address=0.0.0.0
 ```

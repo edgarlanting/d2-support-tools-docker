@@ -15,7 +15,7 @@ This Docker image includes several diagnostic and support tools for D2iQ product
 * unzip/p7zip
 
 TODO:
-* [Time Harper's](https://github.com/timcharper) [mcli](https://github.com/timcharper/mcli)
+* [Tim Harper's](https://github.com/timcharper) [mcli](https://github.com/timcharper/mcli)
 
 ### Current versions
 |Tool|Version|
